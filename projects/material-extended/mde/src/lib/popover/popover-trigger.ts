@@ -250,7 +250,6 @@ export class MdePopoverTrigger implements AfterViewInit, OnDestroy { // tslint:d
 
     /** Closes the popover. */
     closePopover(): void {
-      console.log('close');
         if (this._overlayRef) {
           this._overlayRef.detach();
           this._resetPopover();
@@ -412,7 +411,6 @@ export class MdePopoverTrigger implements AfterViewInit, OnDestroy { // tslint:d
     private _getOverlayScrollStrategy(strategy: MdePopoverScrollStrategy): ScrollStrategy {
       switch(strategy) {
         case 'noop':
-          console.log('noop');
           return this._overlay.scrollStrategies.noop();
         case 'close':
           return this._overlay.scrollStrategies.close();
