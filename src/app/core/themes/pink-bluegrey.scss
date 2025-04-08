@@ -9,8 +9,8 @@
 //  If you don't need the default component typographies but still want the hierarchy styles,
 //  you can delete this line and instead use:
 //    `@include mat.legacy-typography-hierarchy(mat.define-legacy-typography-config());`
-@include mat.all-legacy-component-typographies();
-@include mat.legacy-core();
+@include mat.all-component-typographies();
+@include mat.core();
 
 // Define a theme.
 $primary: mat.define-palette(mat.$pink-palette, 700, 500, 900);
@@ -20,5 +20,5 @@ $theme: mat.define-dark-theme($primary, $accent);
 
 // Include all theme styles for the components.
 .pink-bluegrey-theme {
-  @include mat.all-legacy-component-themes($theme);
+  @include mat.all-component-themes($theme);
 }

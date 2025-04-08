@@ -60,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mde:build"
+            "buildTarget": "mde:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mde:build:production"
+              "buildTarget": "mde:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mde:build"
+            "buildTarget": "mde:build"
           }
         },
         "test": {
