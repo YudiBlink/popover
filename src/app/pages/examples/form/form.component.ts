@@ -7,9 +7,10 @@ import { first } from 'rxjs/operators';
 
 
 @Component({
-  selector: 'app-form',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+    selector: 'app-form',
+    templateUrl: './form.component.html',
+    styleUrls: ['./form.component.scss'],
+    standalone: false
 })
 export class PageExamplesFormComponent implements OnInit {
 

@@ -1,15 +1,4 @@
-.purple-green-theme {
-    @import '@angular/material/prebuilt-themes/indigo-pink.css';
-}
-
-@import './app/core/themes/deeppurple-amber';
-@import './app/core/themes/pink-bluegrey';
-@import './app/core/themes/pink-grey';
-@import './app/core/themes/indigo-pink';
-@import './app/core/themes/indigo-grey';
-@import './app/core/themes/purple-green';
-
-
+@use './app/core/themes/theme';
 
 html, body {
     height: 100%;

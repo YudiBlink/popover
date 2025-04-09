@@ -1,9 +1,10 @@
 import { AfterViewInit, Component, ElementRef, EventEmitter, HostBinding, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'theme-picker',
-  templateUrl: './theme-picker.component.html',
-  styleUrls: ['./theme-picker.component.scss']
+    selector: 'theme-picker',
+    templateUrl: './theme-picker.component.html',
+    styleUrls: ['./theme-picker.component.scss'],
+    standalone: false
 })
 export class ThemePickerComponent implements OnInit {
 
@@ -13,49 +14,27 @@ export class ThemePickerComponent implements OnInit {
 
   items: any = [
     {
-      className: 'pink-grey-theme',
+      className: 'rose-theme',
       styles: {
         'background-color': '#e91e63',
         'background': '-webkit-linear-gradient(-45deg, #e91e63 0%, #e91e63 50%, #bdbdbd 51%, #bdbdbd 100%)'
       }
     },
     {
-      className: 'deeppurple-amber-theme',
+      className: 'violet-theme',
       styles: {
         'background-color': '#673ab7',
         'background': '-webkit-linear-gradient(-45deg, #673ab7 0%, #673ab7 50%, #ffc107 51%, #ffc107 100%)'
       }
     },
     {
-      className: 'indigo-grey-theme',
+      className: 'blue-theme',
       styles: {
         'background-color': '#3f51b5',
         'background': '-webkit-linear-gradient(-45deg, #3f51b5 0%, #3f51b5 50%, #9e9e9e 51%, #9e9e9e 100%)'
       }
     }
   ];
-
-  /*
-{
-  className: '',
-  styles: {
-    'background-color': '#f44336'
-  }
-},
-{
-  className: 'purple-green-theme',
-  styles: {
-    'background-color': '#2196f3'
-  }
-},
-{
-  className: 'candy-app-theme',
-  styles: {
-    'background-color': '#ff5722'
-  }
-}
-*/
-
 
   themeValue = '';
   @Output() themeChange = new EventEmitter();

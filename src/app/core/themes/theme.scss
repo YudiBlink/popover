@@ -1,0 +1,31 @@
+@use '@angular/material' as mat;
+
+.rose-theme {
+  @include mat.theme((
+    color: (
+      primary: mat.$rose-palette,
+    ),
+    typography: Roboto,
+    density: 0
+  ));
+}
+
+
+.violet-theme {
+  @include mat.theme((
+    color: mat.$violet-palette,
+    typography: Roboto,
+    density: 0, 
+  ));
+}
+
+.blue-theme {
+  @include mat.theme((
+    color: mat.$blue-palette,
+    typography: Roboto,
+    density: 0
+  ));
+
+}
+
+@include mat.core();

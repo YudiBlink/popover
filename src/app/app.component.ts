@@ -1,12 +1,13 @@
 import { Component, HostBinding } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
-export const DEFAULT_THEME = 'deeppurple-amber-theme';
+export const DEFAULT_THEME = 'rose-theme';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: false
 })
 export class AppComponent {
   @HostBinding('class') _themeClass: string = DEFAULT_THEME;
